@@ -19,11 +19,11 @@
                 <a href=“/“ class="header-logo link"> <span class="header-logo-item">WEB</span>STUDIO</a>
                 <ul class="header-list list ">
                     <li class="header-item">
-                        <a href="./index.html" class="header-link link ">Studio</a></li>
+                        <a href="./index.html" class="header-link link current ">Studio</a></li>
                     <li class="header-item">
-                        <a href="./portfolio.html" class="header-link link ">Portfolio</a></li>
+                        <a href="./portfolio.html" class="header-link link  ">Portfolio</a></li>
                     <li class="header-item">
-                        <a href="/contact" class="header-link link ">Contact</a></li>
+                        <a href="/contact" class="header-link link  ">Contact</a></li>
                 </ul>
      </nav>
             <a href="mailto:info@devstudio.com" class="header-mail link" >info@devstudio.com </a>   
@@ -35,7 +35,7 @@
         <section class="hero">
             <div class="container">
                     <h1 class="hero-title">Effective Solutions <br> for Your Business</h1>
-                     <button type="button" class="hero-btn">Order Service</button> 
+                     <button type="button" class="hero-btn" data-modal-open>Order Service</button> 
                      <div>
                 </section>
        <section class="solution">
@@ -363,5 +363,15 @@
             </div>
              </div>
     </footer>    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close> 
+                <svg class="icon-close" width="8px" height="8px">
+                            <use href="./img/sprite.svg#icon-close" ></use>
+                            </svg></button>
+        </div>
+    </div>
+    
+    <script src="./modal.js"></script>
 </body>                
 </html>
